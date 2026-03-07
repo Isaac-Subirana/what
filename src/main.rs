@@ -71,7 +71,7 @@ fn main() {
         } 
     }
 
-    let exit_code: i32 = 0;
+    let mut exit_code: i32 = 0;
     
     let mut valid_candidates: usize = 0; //Will be used to check wheter valid candidates have been found.
     let dirs_in_path: Vec<_> = env::var_os("PATH").map(|p| env::split_paths(&p).collect()).unwrap_or_default(); //Read system's PATH.
