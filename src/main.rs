@@ -70,6 +70,8 @@ fn main() {
             std::process::exit(1);
         } 
     }
+
+    let exit_code: i32 = 0;
     
     let mut valid_candidates: usize = 0; //Will be used to check wheter valid candidates have been found.
     let dirs_in_path: Vec<_> = env::var_os("PATH").map(|p| env::split_paths(&p).collect()).unwrap_or_default(); //Read system's PATH.
@@ -122,6 +124,7 @@ fn main() {
         if !minimal && !silent { //If -m has not been passed, show custom messages depending on the amount of coincidences found:
             if valid_candidates == 0 {
                 println!("{}", "Found no coincidences in your system's PATH.".green());
+                exit_code = 1;
             } else if valid_candidates == 1 {
                 println!("\n{}", "Found 1 coincidence in your system's PATH.".green());
                 valid_candidates = 0;
@@ -135,7 +138,7 @@ fn main() {
         }
     }
 
-    if silent {
+    if silent || minimal {
         if valid_candidates == num_args - 1 {
             std::process::exit(0);
         }
@@ -143,7 +146,7 @@ fn main() {
             std::process::exit(1);
         }
     } else {
-        std::process::exit(0);
+        std::process::exit(exit_code);
     }
 
 }
