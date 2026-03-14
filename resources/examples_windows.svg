@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" style="font-family: monospace;">
+  <rect width="1000" height="550" rx="8" fill="#000000"/>
+  <text x="20" y="25" fill="#cdd6f4" font-size="14">C:\> what explorer.exe</text>
+  <text x="20" y="45" fill="#c19c00" font-size="14">WARNING: Will be searching for 'explorer.exe' with the PATH file extensions (for example, 'explorer.exe.exe').</text>
+  <text x="20" y="60" fill="#c19c00" font-size="14">To avoid this, do not include file extensions in the passed binaries.</text>
+  <text x="20" y="85" fill="#13a10e" font-size="14">Found no coincidences in your system's PATH.</text>
+  <text x="20" y="125" fill="#cdd6f4" font-size="14">C:\> what explorer notepad</text>
+  <text x="20" y="150" fill="#3a96dd" font-size="14">C:\WINDOWS\explorer.exe</text>
+  <text x="20" y="170" fill="#13a10e" font-size="14">Found 1 coincidence in your system's PATH.</text>
+  <text x="20" y="195" fill="#3a96dd" font-size="14">C:\WINDOWS\system32\notepad.exe</text>
+  <text x="20" y="215" fill="#3a96dd" font-size="14">C:\WINDOWS\notepad.exe</text>
+  <text x="20" y="235" fill="#3a96dd" font-size="14">C:\Users\User\AppData\Local\Microsoft\WindowsApps\notepad.exe</text>
+  <text x="20" y="255" fill="#13a10e" font-size="14">Found 3 coincidences in your system's PATH (which means conflicts could exist with this binary).</text>
+  <text x="20" y="295" fill="#cdd6f4" font-size="14">C:\> what -m notepad</text>
+  <text x="20" y="320" fill="#cdd6f4" font-size="14">C:\WINDOWS\system32\notepad.exe</text>
+  <text x="20" y="360" fill="#cdd6f4" font-size="14">C:\> what -s notepad</text>
+  <text x="20" y="400" fill="#cdd6f4" font-size="14">C:\> echo %ERRORLEVEL%</text>
+  <text x="20" y="425" fill="#cdd6f4" font-size="14">0</text>
+  <text x="20" y="465" fill="#cdd6f4" font-size="14">C:\> what -s notepad explorer.exe</text>
+  <text x="20" y="505" fill="#cdd6f4" font-size="14">C:\> echo %ERRORLEVEL%</text>
+  <text x="20" y="530" fill="#cdd6f4" font-size="14">1</text>
+</svg>

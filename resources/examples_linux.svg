@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 525" style="font-family: monospace;">
+  <rect width="1000" height="525" rx="8" fill="#000000"/>
+  <text x="20" y="25" fill="#cdd6f4" font-size="14">[user@computer ~]$ what explorer</text>
+  <text x="20" y="50" fill="#13a10e" font-size="14">Found no coincidences in your system's PATH.</text>
+  <text x="20" y="90" fill="#cdd6f4" font-size="14">[user@computer ~]$ what echo sudo</text>
+  <text x="20" y="115" fill="#3a96dd" font-size="14">/usr/bin/echo</text>
+  <text x="20" y="135" fill="#3a96dd" font-size="14">/bin/echo</text> 
+  <text x="20" y="160" fill="#13a10e" font-size="14">Found 2 coincidences in your system's PATH (which means conflicts could exist with this binary).</text>
+  <text x="20" y="185" fill="#3a96dd" font-size="14">/usr/bin/sudo</text>
+  <text x="20" y="205" fill="#3a96dd" font-size="14">/bin/sudo</text>
+  <text x="20" y="230" fill="#13a10e" font-size="14">Found 2 coincidences in your system's PATH (which means conflicts could exist with this binary).</text>
+  <text x="20" y="270" fill="#cdd6f4" font-size="14">[user@computer ~]$ what -m sudo</text>
+  <text x="20" y="295" fill="#cdd6f4" font-size="14">/usr/bin/sudo</text>
+  <text x="20" y="335" fill="#cdd6f4" font-size="14">[user@computer ~]$ what -s echo</text>
+  <text x="20" y="375" fill="#cdd6f4" font-size="14">[user@computer ~]$ echo $?</text>
+  <text x="20" y="400" fill="#cdd6f4" font-size="14">0</text>
+  <text x="20" y="440" fill="#cdd6f4" font-size="14">[user@computer ~]$ what -s echo explorer</text>
+  <text x="20" y="480" fill="#cdd6f4" font-size="14">[user@computer ~]$ echo $?</text>
+  <text x="20" y="505" fill="#cdd6f4" font-size="14">1</text>
+</svg>
