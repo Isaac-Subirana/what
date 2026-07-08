@@ -5,3 +5,7 @@ edition = "2024"
 
 [dependencies]
 colored = "3.1.1"
+
+[profile.release]
+opt-level = 3
+lto = true
